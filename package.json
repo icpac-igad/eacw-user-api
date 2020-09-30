@@ -38,6 +38,7 @@
         "bunyan": "^1.8.12",
         "config": "^3.2.5",
         "ct-register-microservice-node": "^2.1.7",
+        "dotenv": "^8.2.0",
         "geojsonhint": "^2.0.0",
         "grunt-run": "^0.8.1",
         "jsonapi-serializer": "^3.6.6",

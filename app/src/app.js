@@ -79,7 +79,6 @@ async function init() {
             // In production environment, the port must be declared in environment variable
             const port = process.env.PORT || config.get('service.port');
 
-
             server.listen(port, () => {
                 ctRegisterMicroservice.register({
                     info: require('../microservice/register.json'),
