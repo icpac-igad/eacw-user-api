@@ -1,6 +1,6 @@
 {
     "logger": {
-        "name": "gfw-user-api-STAGING",
+        "name": "eacw-user-api-STAGING",
         "level": "info",
         "toFile": false,
         "dirLogFile": null

@@ -10,7 +10,7 @@
         "port": "PORT",
         "uri": "URI"
     },
-    "migrate":{
+    "migrate": {
         "uri": "MIGRATE_URI"
     }
 }

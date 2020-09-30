@@ -1,89 +1,89 @@
 {
-  "name": "gfw-user-api",
-  "version": "2.0.0",
-  "description": "Global forest watch - User API",
-  "main": "index.js",
-  "scripts": {
-    "start": "NODE_PATH=app/src node app/index.js",
-    "test": "NODE_PATH=app/src NODE_ENV=test grunt --gruntfile app/Gruntfile.js test",
-    "coverage": "NODE_PATH=app/src node $NODE_DEBUG_OPTION ./node_modules/.bin/grunt --gruntfile app/Gruntfile.js nyc",
-    "migrate": "NODE_PATH=app/src node app/src/migrate/migrate.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Vizzuality/gfw-geostore-api.git"
-  },
-  "keywords": [
-    "gfw",
-    "api",
-    "microservice",
-    "node",
-    "javascript",
-    "koa"
-  ],
-  "author": {
-    "name": "Vizzuality",
-    "email": "hello@vizzuality.com",
-    "url": "http://vizzuality.com/"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Vizzuality/gfw-geostore-api/issues"
-  },
-  "engines": {
-    "node": "~12"
-  },
-  "homepage": "https://github.com/Vizzuality/gfw-geostore-api#readme",
-  "dependencies": {
-    "bunyan": "^1.8.12",
-    "config": "^3.2.5",
-    "ct-register-microservice-node": "^2.1.7",
-    "geojsonhint": "^2.0.0",
-    "grunt-run": "^0.8.1",
-    "jsonapi-serializer": "^3.6.6",
-    "koa": "^2.11.0",
-    "koa-bodyparser": "^4.2.1",
-    "koa-logger": "^3.2.1",
-    "koa-mount": "^4.0.0",
-    "koa-qs": "^2.0.0",
-    "koa-router": "^8.0.8",
-    "koa-simple-healthcheck": "^0.0.1",
-    "koa-validate": "^1.0.7",
-    "mongoose": "^5.9.1"
-  },
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "chai-http": "^4.3.0",
-    "chai-datetime": "^1.5.0",
-    "co-mocha": "^1.2.2",
-    "eslint": "^6.0.1",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-mocha": "^6.2.1",
-    "eslint-plugin-react": "^7.14.2",
-    "grunt": "^1.0.4",
-    "grunt-apidoc": "^0.11.0",
-    "grunt-cli": "^1.3.2",
-    "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-express-server": "^0.5.4",
-    "grunt-mocha-test": "^0.13.3",
-    "grunt-notify": "^0.4.5",
-    "grunt-simple-nyc": "^3.0.1",
-    "husky": ">=4",
-    "lint-staged": ">=10",
-    "load-grunt-tasks": "^5.1.0",
-    "mocha": "^7.0.1",
-    "nock": "^11.8.2",
-    "nyc": "^15.0.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
+    "name": "eacw-user-api",
+    "version": "2.0.0",
+    "description": "EACW - User API",
+    "main": "index.js",
+    "scripts": {
+        "start": "NODE_PATH=app/src node app/index.js",
+        "test": "NODE_PATH=app/src NODE_ENV=test grunt --gruntfile app/Gruntfile.js test",
+        "coverage": "NODE_PATH=app/src node $NODE_DEBUG_OPTION ./node_modules/.bin/grunt --gruntfile app/Gruntfile.js nyc",
+        "migrate": "NODE_PATH=app/src node app/src/migrate/migrate.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/icpac-igad/eacw-user-api.git"
+    },
+    "keywords": [
+        "eacw",
+        "api",
+        "microservice",
+        "node",
+        "javascript",
+        "koa"
+    ],
+    "author": {
+        "name": "ICPAC",
+        "email": "developer@icpac.net",
+        "url": "https://icpac.net/"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/icpac-igad/eacw-user-api/issues"
+    },
+    "engines": {
+        "node": "~12"
+    },
+    "homepage": "https://github.com/icpac-igad/eacw-user-api#readme",
+    "dependencies": {
+        "bunyan": "^1.8.12",
+        "config": "^3.2.5",
+        "ct-register-microservice-node": "^2.1.7",
+        "geojsonhint": "^2.0.0",
+        "grunt-run": "^0.8.1",
+        "jsonapi-serializer": "^3.6.6",
+        "koa": "^2.11.0",
+        "koa-bodyparser": "^4.2.1",
+        "koa-logger": "^3.2.1",
+        "koa-mount": "^4.0.0",
+        "koa-qs": "^2.0.0",
+        "koa-router": "^8.0.8",
+        "koa-simple-healthcheck": "^0.0.1",
+        "koa-validate": "^1.0.7",
+        "mongoose": "^5.9.1"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "chai-datetime": "^1.5.0",
+        "chai-http": "^4.3.0",
+        "co-mocha": "^1.2.2",
+        "eslint": "^6.0.1",
+        "eslint-config-airbnb": "^18.0.1",
+        "eslint-plugin-import": "^2.18.0",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-mocha": "^6.2.1",
+        "eslint-plugin-react": "^7.14.2",
+        "grunt": "^1.0.4",
+        "grunt-apidoc": "^0.11.0",
+        "grunt-cli": "^1.3.2",
+        "grunt-contrib-clean": "^2.0.0",
+        "grunt-contrib-watch": "^1.1.0",
+        "grunt-express-server": "^0.5.4",
+        "grunt-mocha-test": "^0.13.3",
+        "grunt-notify": "^0.4.5",
+        "grunt-simple-nyc": "^3.0.1",
+        "husky": ">=4",
+        "lint-staged": ">=10",
+        "load-grunt-tasks": "^5.1.0",
+        "mocha": "^7.0.1",
+        "nock": "^11.8.2",
+        "nyc": "^15.0.0"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.js": "eslint --cache --fix"
     }
-  },
-  "lint-staged": {
-    "*.js": "eslint --cache --fix"
-  }
 }
