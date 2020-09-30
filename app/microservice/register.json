@@ -1,93 +1,78 @@
 {
-  "id": "#(service.id)",
-  "name": "#(service.name)",
-  "tags": [
-    "gfw"
-  ],
-  "urls": [
-    {
-      "url": "/v1/user",
-      "authenticated": true,
-      "method": "GET",
-      "endpoints": [
+    "id": "#(service.id)",
+    "name": "#(service.name)",
+    "tags": [
+        "gfw"
+    ],
+    "urls": [{
+            "url": "/user",
+            "authenticated": true,
+            "method": "GET",
+            "endpoints": [{
+                "method": "GET",
+                "baseUrl": "#(service.uri)",
+                "path": "/api/v1/user"
+            }]
+        },
         {
-          "method": "GET",
-          "baseUrl": "#(service.uri)",
-          "path": "/api/v1/user"
-        }
-      ]
-    },
-    {
-      "url": "/v1/user",
-      "method": "POST",
-      "authenticated": true,
-      "endpoints": [
+            "url": "/user",
+            "method": "POST",
+            "authenticated": true,
+            "endpoints": [{
+                "method": "POST",
+                "baseUrl": "#(service.uri)",
+                "path": "/api/v1/user"
+            }]
+        },
         {
-          "method": "POST",
-          "baseUrl": "#(service.uri)",
-          "path": "/api/v1/user"
-        }
-      ]
-    },
-    {
-      "url": "/v1/user/:id",
-      "method": "GET",
-      "authenticated": true,
-      "endpoints": [
+            "url": "/user/:id",
+            "method": "GET",
+            "authenticated": true,
+            "endpoints": [{
+                "method": "GET",
+                "baseUrl": "#(service.uri)",
+                "path": "/api/v1/user/:id"
+            }]
+        },
         {
-          "method": "GET",
-          "baseUrl": "#(service.uri)",
-          "path": "/api/v1/user/:id"
-        }
-      ]
-    },
-    {
-      "url": "/v1/user/stories",
-      "method": "GET",
-      "authenticated": true,
-      "endpoints": [
+            "url": "/user/stories",
+            "method": "GET",
+            "authenticated": true,
+            "endpoints": [{
+                "method": "GET",
+                "baseUrl": "#(service.uri)",
+                "path": "/api/v1/user/stories"
+            }]
+        },
         {
-          "method": "GET",
-          "baseUrl": "#(service.uri)",
-          "path": "/api/v1/user/stories"
-        }
-      ]
-    },
-    {
-      "url": "/v1/user/:id",
-      "method": "DELETE",
-      "authenticated": true,
-      "endpoints": [
+            "url": "/user/:id",
+            "method": "DELETE",
+            "authenticated": true,
+            "endpoints": [{
+                "method": "DELETE",
+                "baseUrl": "#(service.uri)",
+                "path": "/api/v1/user/:id"
+            }]
+        },
         {
-          "method": "DELETE",
-          "baseUrl": "#(service.uri)",
-          "path": "/api/v1/user/:id"
-        }
-      ]
-    },
-    {
-      "url": "/v1/user/:id",
-      "method": "PATCH",
-      "authenticated": true,
-      "endpoints": [
+            "url": "/user/:id",
+            "method": "PATCH",
+            "authenticated": true,
+            "endpoints": [{
+                "method": "PATCH",
+                "baseUrl": "#(service.uri)",
+                "path": "/api/v1/user/:id"
+            }]
+        },
         {
-          "method": "PATCH",
-          "baseUrl": "#(service.uri)",
-          "path": "/api/v1/user/:id"
+            "url": "/user/obtain/all-users",
+            "authenticated": true,
+            "method": "GET",
+            "endpoints": [{
+                "method": "GET",
+                "baseUrl": "#(service.uri)",
+                "path": "/api/v1/user/obtain/all-users"
+            }]
         }
-      ]
-    },
-    {
-      "url": "/v1/user/obtain/all-users",
-      "authenticated": true,
-      "method": "GET",
-      "endpoints": [
-        {
-          "method": "GET",
-          "baseUrl": "#(service.uri)",
-          "path": "/api/v1/user/obtain/all-users"
-        }
-      ]
-    }
-  ]
+    ]
 }
